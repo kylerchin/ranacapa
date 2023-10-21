@@ -22,7 +22,7 @@ if (!requireNamespace("devtools", quietly = TRUE))
 ```
 library(devtools)
 
-devtools::install_github("gauravsk/ranacapa")
+devtools::install_github("kylerchin/ranacapa")
 ```
 
 2. The package installation may take a few minutes.
