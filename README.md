@@ -6,8 +6,14 @@
 
 ### How to install:
 
-0. Install the `phyloseq` and `devtools` packages into `R` if you don't already have them:  
+Install the bloody Ubuntu dependencies first!
+
+```bash
+sudo apt install libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev
 ```
+
+0. Install the `phyloseq` and `devtools` packages into `R` if you don't already have them:  
+```r
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
@@ -19,7 +25,7 @@ if (!requireNamespace("devtools", quietly = TRUE))
 ```
 
 1. Install ranacapa:
-```
+```r
 library(devtools)
 
 devtools::install_github("kylerchin/ranacapa")
@@ -31,7 +37,7 @@ devtools::install_github("kylerchin/ranacapa")
 ### How to run the interactive shiny app:
 1. Launch the shiny app by running the following line in `R`:
 
-```
+```r
 library(ranacapa)
 ranacapa::runRanacapaApp()
 ```
