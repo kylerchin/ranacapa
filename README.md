@@ -22,6 +22,8 @@ BiocManager::install("phyloseq")
 
 if (!requireNamespace("devtools", quietly = TRUE))
       install.packages('devtools')
+
+install.packages("broom")
 ```
 
 1. Install ranacapa:
